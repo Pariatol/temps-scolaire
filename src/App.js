@@ -18,7 +18,7 @@ class App extends React.Component {
     var form = document.querySelector("form");
     var i = 0;
     // dans l'expression régulière, on ajoute " " pour tenir compte de Paris, Marseille et Lyon, qui prennent, par ex, la forme "Paris 5e Arrondissement"
-    var regExp = RegExp(form.elements.commune.value+" ");
+    var regExp = RegExp(form.elements.commune.value.toLowerCase()+" ");
     
     var searchResult = data.filter(item => {
       if(item.commune.toLowerCase()===form.elements.commune.value.toLowerCase() || regExp.test(item.commune.toLowerCase())){
