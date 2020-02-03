@@ -16,12 +16,15 @@ html{
 .titre{
   font-size: 6rem;
   margin-bottom:0.6rem;
+  text-transform: uppercase;
+  color:#2A12D6;
 }
 
 .sousTitre{
   font-size:2.2rem;
   margin-top:0.2rem;
   margin-bottom:1.9rem;
+  color:#1D1C1D;
 }
 
 .titre, .sousTitre{
@@ -38,11 +41,12 @@ form{
 
 .search{
   height:3rem;
-  width:70%;
+  width:40%;
   font-size:2.2rem;
   padding:1rem;
   border-radius:10px;
   border:4px solid lightblue;
+  text-align:center;
 }
 
 .submitButton{
@@ -60,11 +64,13 @@ form{
 .result{
   font-size:2.2rem;
   font-weight:700;
+  color:#1D1C1D;
 }
 
 @media (max-width:375px){
 
   .titre{
+    font-size:14px;
     margin-bottom:0.6rem;
   }
 
@@ -82,20 +88,41 @@ form{
     align-items: center;
   }
 
+  .search{
+    font-size:1.6rem;
+    width:80%;
+  }
+
 
   .titre{
-    margin-top:12rem;
+    margin-top:4rem;
     font-size: 2.3rem;
     margin-bottom:0.6rem;
+    color:#50B019;
+
   }
 
   .sousTitre{
     margin-left:1rem;
     margin-right:0.5rem;
+    font-size:1.8rem;
+    margin-bottom:2rem;
+    margin-top:2rem;
   }
 
   .result{
     margin-left:1rem;
+    margin-right:1rem;
   }
   
+}
+
+@media (max-height:569px){
+  .sousTitre{
+    font-size:1.5rem;
+  }
+  
+  .result{
+    font-size:1.5rem;
+  }
 }
