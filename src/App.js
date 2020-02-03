@@ -97,7 +97,7 @@ function SearchBar(props) {
     <React.Fragment>
       <form onSubmit={(e)=>props.checkIfMercredi(e)}>      
       <input className="search" id="commune" name="commune" placeholder="Entrez le nom d'une commune" type="text"/>
-      <input className="submitButton" type="submit"/>
+      <input className="submitButton" type="submit" value="Valider"/>
       </form>
     </React.Fragment>
   )
